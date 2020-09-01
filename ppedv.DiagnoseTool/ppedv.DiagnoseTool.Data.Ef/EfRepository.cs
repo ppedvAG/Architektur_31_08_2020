@@ -11,7 +11,14 @@ namespace ppedv.DiagnoseTool.Data.Ef
 {
     public class EfRepository : IRepository
     {
-        private EfContext context = new EfContext();
+        private EfContext context = null;
+
+        public EfRepository(string conString = "Server= (localdb)\\MSSQLLocalDB;Database=Diagnosetool_DEMO;Trusted_Connection=true;")
+        {
+            context = new EfContext(conString);
+        }
+
+        
 
         public void Add<T>(T entity) where T : Entity
         {
