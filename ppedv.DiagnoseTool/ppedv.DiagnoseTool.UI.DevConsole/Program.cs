@@ -16,11 +16,14 @@ namespace ppedv.DiagnoseTool.UI.DevConsole
 
             var core = new Core(new Data.Ef.EfRepository());
 
+            if (core.Repository.GetAll<Patient>().Count() == 0)
+                core.CreateDemoDaten();
+
             foreach (var p in core.Repository.GetAll<Patient>())
             {
                 ShowPatient(p);
             }
-            
+
             Console.WriteLine("********************************************************");
 
             foreach (var p in core.GetPatientenByFacharztrichtung("FacharztRichtungc6c58d74-2a9c-4b5d-9e9b-2333f4a82e90"))
