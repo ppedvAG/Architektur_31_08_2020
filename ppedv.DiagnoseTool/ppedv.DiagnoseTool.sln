@@ -23,6 +23,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CrossCutting", "CrossCuttin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.DiagnoseTool.Logik.Tests", "ppedv.DiagnoseTool.Logik.Tests\ppedv.DiagnoseTool.Logik.Tests.csproj", "{884E4258-6ADB-4B3D-8FCC-5B4C4757726A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.DiagnoseTool.UI.WebCore30", "ppedv.DiagnoseTool.UI.WebCore30\ppedv.DiagnoseTool.UI.WebCore30.csproj", "{91B0BB72-CF11-455B-BD36-6A70A3A142B0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{884E4258-6ADB-4B3D-8FCC-5B4C4757726A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{884E4258-6ADB-4B3D-8FCC-5B4C4757726A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{884E4258-6ADB-4B3D-8FCC-5B4C4757726A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91B0BB72-CF11-455B-BD36-6A70A3A142B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91B0BB72-CF11-455B-BD36-6A70A3A142B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91B0BB72-CF11-455B-BD36-6A70A3A142B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91B0BB72-CF11-455B-BD36-6A70A3A142B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +70,7 @@ Global
 		{3EEF6E89-B2B8-439A-806F-3A40600799EF} = {61660DBF-CD6B-464E-9744-C33A7045678E}
 		{4092584B-CE93-4801-83FE-B0A4A25CE089} = {9AD72DB0-5D7B-425A-ABC4-3CCD22347DFD}
 		{884E4258-6ADB-4B3D-8FCC-5B4C4757726A} = {61660DBF-CD6B-464E-9744-C33A7045678E}
+		{91B0BB72-CF11-455B-BD36-6A70A3A142B0} = {9AD72DB0-5D7B-425A-ABC4-3CCD22347DFD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0CAC22F7-05B2-41EC-A834-F57A036CD522}
