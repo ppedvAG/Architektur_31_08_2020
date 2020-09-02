@@ -14,7 +14,7 @@ namespace ppedv.DiagnoseTool.Logik
 
         public Arzt GetArztWithMostPatienten()
         {
-            return core.Repository.GetAll<Arzt>().OrderByDescending(x => x.Diagnosen.Select(y => y.Patient).Count()).FirstOrDefault();
+            return core.Repository.Query<Arzt>().OrderByDescending(x => x.Diagnosen.Select(y => y.Patient).Count()).FirstOrDefault();
         }
     }
 }

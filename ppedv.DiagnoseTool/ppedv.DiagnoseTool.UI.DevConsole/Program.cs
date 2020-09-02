@@ -31,6 +31,7 @@ namespace ppedv.DiagnoseTool.UI.DevConsole
                 Console.WriteLine(p.Name);
             }
 
+            Console.WriteLine($"Arzt mit meisten Patienten: {core.ArztManager.GetArztWithMostPatienten().Name}");
 
 
             Console.WriteLine("Ende");
