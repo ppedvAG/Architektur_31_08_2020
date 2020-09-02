@@ -61,6 +61,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ViewModels\PatientenViewModel.cs" />
     <Compile Include="Views\ArztView.xaml.cs">
       <DependentUpon>ArztView.xaml</DependentUpon>
     </Compile>
@@ -123,7 +124,24 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ViewModels\" />
+    <ProjectReference Include="..\ppedv.DiagnoseTool.Data.Ef\ppedv.DiagnoseTool.Data.Ef.csproj">
+      <Project>{ce3641fd-93d5-455b-8277-0fe02e7b087e}</Project>
+      <Name>ppedv.DiagnoseTool.Data.Ef</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ppedv.DiagnoseTool.Logik\ppedv.DiagnoseTool.Logik.csproj">
+      <Project>{3eef6e89-b2b8-439a-806f-3a40600799ef}</Project>
+      <Name>ppedv.DiagnoseTool.Logik</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ppedv.DiagnoseTool.Model\ppedv.DiagnoseTool.Model.csproj">
+      <Project>{510947c2-0520-4c41-86cb-7ac9f55b9cc4}</Project>
+      <Name>ppedv.DiagnoseTool.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll">
+      <Link>EntityFramework.SqlServer.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
