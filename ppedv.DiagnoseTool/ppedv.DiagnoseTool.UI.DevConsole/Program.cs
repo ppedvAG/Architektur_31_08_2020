@@ -17,7 +17,7 @@ namespace ppedv.DiagnoseTool.UI.DevConsole
             var core = new Core(new Data.Ef.EfRepository());
 
             if (core.Repository.GetAll<Patient>().Count() == 0)
-                core.CreateDemoDaten();
+                core.DemoManager.CreateDemoDaten();
 
             foreach (var p in core.Repository.GetAll<Patient>())
             {
@@ -26,7 +26,7 @@ namespace ppedv.DiagnoseTool.UI.DevConsole
 
             Console.WriteLine("********************************************************");
 
-            foreach (var p in core.GetPatientenByFacharztrichtung("Clothing"))
+            foreach (var p in core.PatientenManager.GetPatientenByFacharztrichtung("Clothing"))
             {
                 Console.WriteLine(p.Name);
             }

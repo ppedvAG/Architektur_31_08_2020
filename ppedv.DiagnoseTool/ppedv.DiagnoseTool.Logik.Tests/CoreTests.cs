@@ -13,7 +13,7 @@ namespace ppedv.DiagnoseTool.Logik.Tests
         {
             var core = new Core(new TestRepo());
 
-            var result = core.GetArztWithMostPatienten();
+            var result = core.ArztManager.GetArztWithMostPatienten();
 
             Assert.AreEqual("Dr. Wer", result.Name);
         }
@@ -36,7 +36,7 @@ namespace ppedv.DiagnoseTool.Logik.Tests
             
             var core = new Core(mock.Object);
 
-            var result = core.GetArztWithMostPatienten();
+            var result = core.ArztManager.GetArztWithMostPatienten();
 
             Assert.AreEqual("Dr. Wer", result.Name);
         }
