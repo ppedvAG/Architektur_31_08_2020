@@ -57,6 +57,10 @@ namespace ppedv.DiagnoseTool.Logik
             Repository.SaveAll();
         }
 
+        public Arzt GetArztWithMostPatienten()
+        {
+            return Repository.GetAll<Arzt>().OrderByDescending(x => x.Diagnosen.Select(y => y.Patient).Count()).FirstOrDefault();
+        }
 
 
         public IEnumerable<Patient> GetPatientenByFacharztrichtung(string facharztrichtung)

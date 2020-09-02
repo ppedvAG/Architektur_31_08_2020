@@ -3,15 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.DiagnoseTool.Model", "ppedv.DiagnoseTool.Model\ppedv.DiagnoseTool.Model.csproj", "{510947C2-0520-4C41-86CB-7AC9F55B9CC4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ppedv.DiagnoseTool.Model", "ppedv.DiagnoseTool.Model\ppedv.DiagnoseTool.Model.csproj", "{510947C2-0520-4C41-86CB-7AC9F55B9CC4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.DiagnoseTool.Data.Ef", "ppedv.DiagnoseTool.Data.Ef\ppedv.DiagnoseTool.Data.Ef.csproj", "{CE3641FD-93D5-455B-8277-0FE02E7B087E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.DiagnoseTool.Data.Ef.Test", "ppedv.DiagnoseTool.Data.Ef.Test\ppedv.DiagnoseTool.Data.Ef.Test.csproj", "{EAF70CA5-EF19-40DF-9509-6713947A3B3D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.DiagnoseTool.Logik", "ppedv.DiagnoseTool.Logik\ppedv.DiagnoseTool.Logik.csproj", "{3EEF6E89-B2B8-439A-806F-3A40600799EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ppedv.DiagnoseTool.Logik", "ppedv.DiagnoseTool.Logik\ppedv.DiagnoseTool.Logik.csproj", "{3EEF6E89-B2B8-439A-806F-3A40600799EF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.DiagnoseTool.UI.DevConsole", "ppedv.DiagnoseTool.UI.DevConsole\ppedv.DiagnoseTool.UI.DevConsole.csproj", "{4092584B-CE93-4801-83FE-B0A4A25CE089}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{9AD72DB0-5D7B-425A-ABC4-3CCD22347DFD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{6ABC64EF-94B3-44F4-A965-06CC519A3030}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logik", "Logik", "{61660DBF-CD6B-464E-9744-C33A7045678E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CrossCutting", "CrossCutting", "{4D131F31-F03F-45CA-960C-D75F68BFDE9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.DiagnoseTool.Logik.Tests", "ppedv.DiagnoseTool.Logik.Tests\ppedv.DiagnoseTool.Logik.Tests.csproj", "{884E4258-6ADB-4B3D-8FCC-5B4C4757726A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,9 +49,21 @@ Global
 		{4092584B-CE93-4801-83FE-B0A4A25CE089}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4092584B-CE93-4801-83FE-B0A4A25CE089}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4092584B-CE93-4801-83FE-B0A4A25CE089}.Release|Any CPU.Build.0 = Release|Any CPU
+		{884E4258-6ADB-4B3D-8FCC-5B4C4757726A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{884E4258-6ADB-4B3D-8FCC-5B4C4757726A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{884E4258-6ADB-4B3D-8FCC-5B4C4757726A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{884E4258-6ADB-4B3D-8FCC-5B4C4757726A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{510947C2-0520-4C41-86CB-7AC9F55B9CC4} = {4D131F31-F03F-45CA-960C-D75F68BFDE9A}
+		{CE3641FD-93D5-455B-8277-0FE02E7B087E} = {6ABC64EF-94B3-44F4-A965-06CC519A3030}
+		{EAF70CA5-EF19-40DF-9509-6713947A3B3D} = {6ABC64EF-94B3-44F4-A965-06CC519A3030}
+		{3EEF6E89-B2B8-439A-806F-3A40600799EF} = {61660DBF-CD6B-464E-9744-C33A7045678E}
+		{4092584B-CE93-4801-83FE-B0A4A25CE089} = {9AD72DB0-5D7B-425A-ABC4-3CCD22347DFD}
+		{884E4258-6ADB-4B3D-8FCC-5B4C4757726A} = {61660DBF-CD6B-464E-9744-C33A7045678E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0CAC22F7-05B2-41EC-A834-F57A036CD522}
